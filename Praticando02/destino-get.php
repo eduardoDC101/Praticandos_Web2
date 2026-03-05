@@ -1,5 +1,7 @@
 <?php
 
+var_dump($_GET);
+
 $nome = $_GET["nome"] ?? "";
 $email = $_GET["email"] ?? "";
 $cor = $_GET["cor"] ?? "";
