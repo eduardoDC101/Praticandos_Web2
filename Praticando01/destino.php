@@ -1,10 +1,10 @@
 <?php
-$titulo = $_POST["titulo"];
-$corpo = $_POST["corpo"];
-$cor_texto = $_POST["cor_texto"];
-$imagem = $_POST["imagem"];
-$link = $_POST["link"];
-$cor_fundo = $_POST["cor_fundo"];
+$titulo = $_POST["titulo"] ?? null;
+$corpo = $_POST["corpo"] ?? null;
+$cor_texto = $_POST["cor_texto"] ?? null;
+$imagem = $_POST["imagem"] ?? null;
+$link = $_POST["link"] ?? null;
+$cor_fundo = $_POST["cor_fundo"] ?? null;
 ?>
 
 <!DOCTYPE html>
