@@ -36,7 +36,7 @@ $media = ($nota1 + $nota2 + $nota3) / 3;
                 echo "<span style='color:red'>REPROVADO</span>";
 
             }
-            else if($media > 4 && $media < 6){
+            else if($media >= 4 && $media < 6){
 
                 echo "<span style='color:orange'>DE RECUPERAÇÃO</span>";
 
