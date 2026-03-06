@@ -18,6 +18,7 @@ $estilo = $_POST['estilo'];
 <body class="container mt-4">
 
 <h2>Tabela <?php echo $linhas . "x" . $colunas; ?></h2>
+<hr>
 
 <table class="table table-bordered <?php echo $estilo; ?>">
 
