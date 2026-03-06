@@ -24,7 +24,7 @@ if ($primo) {
     $borda = "border-success";
 }
 
-if($numero % 2 == 0)
+if($numero != "" && $numero % 2 == 0)
     $parim = "Par";
 ?>
 

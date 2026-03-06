@@ -21,7 +21,7 @@
                     <div class="border border-1 border-gray-300 px-3 py-2">1. <a href="tabuada.php">Praticando Tabuada</a></div>
                     <div class="border border-1 border-gray-300 px-3 py-2">2. <a href="contador.php">Praticando Contador</a></div>
                     <div class="border border-1 border-gray-300 px-3 py-2">3. <a href="primo.php">Praticando Números Primos</a></div>
-                    <div class="border border-1 border-gray-300 px-3 py-2">4. <a href="#">Praticando Gerador de Tabela</a></div>
+                    <div class="border border-1 border-gray-300 px-3 py-2">4. <a href="form.php">Praticando Gerador de Tabela</a></div>
                 </nav>
             </header>
         </section>
