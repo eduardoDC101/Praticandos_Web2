@@ -26,7 +26,7 @@
                 </label>
                 <label for="email" class="w-50">
                     E-mail:
-                    <input type="email" name="email" id="email" placeholder="Digite seu Nome..." class="w-100 p-1 semFoco" required>
+                    <input type="email" name="email" id="email" placeholder="Digite seu E-mail..." class="w-100 p-1 semFoco" required>
                 </label>
             </div>
             <label for="mensagem" class="w-100 px-4 mb-4">
