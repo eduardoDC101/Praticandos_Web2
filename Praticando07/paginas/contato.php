@@ -29,9 +29,9 @@ $titulo = "Formulário para Contato";
         </style>
     </head>
     <body>
-        <?php require "header.php" ?>
-            <?php require "titulo.php" ?>
-            <form action="a" class="w-100">
+        <?php require "../partes/header.php" ?>
+            <?php require "../partes/titulo.php" ?>
+            <form action="destino-form.php" method="post" class="w-100">
                 <div class="d-flex flex-row w-75 mx-auto my-0 gap-3 mb-3">
                     <label for="nome" class="d-flex flex-column w-50">
                         Nome:
@@ -44,14 +44,14 @@ $titulo = "Formulário para Contato";
                 </div>
                 <label for="mensagem" class="d-flex flex-column w-75 mx-auto my-0 mb-3">
                     Mensagem:
-                    <Textarea style="resize: none;" class="p-2 rounded-2 border border-1 border-secondary"></Textarea>
+                    <Textarea name="mensagem" id="mensagem" rows="4" cols="50" style="resize: none;" class="p-2 rounded-2 border border-1 border-secondary"></Textarea>
                 </label>
                 <div class="d-flex flex-row w-50 mx-auto my-0 gap-2 mb-3 aligin-itemns-center justify-content-center">
                     <button type="submit" class="bg-primary text-white border-0 rounded-2 px-3 py-2">Enviar</button>
                     <button type="reset" class="bg-warning border-0 rounded-2 px-3 py-2">Limpar</button>
                 </div>
             </form>
-        <?php require "footer.php"?>
+        <?php require "../partes/footer.php"?>
 
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
     </body>
