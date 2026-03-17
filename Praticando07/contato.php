@@ -30,7 +30,7 @@ $titulo = "Formulário para Contato";
     </head>
     <body>
         <?php require "header.php" ?>
-            <?php require "conteudo.php" ?>
+            <?php require "titulo.php" ?>
             <form action="a" class="w-100">
                 <div class="d-flex flex-row w-75 mx-auto my-0 gap-3 mb-3">
                     <label for="nome" class="d-flex flex-column w-50">
