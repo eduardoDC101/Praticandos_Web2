@@ -6,6 +6,17 @@ if($_SERVER["REQUEST_METHOD"] == "POST" ){
     $nome = $_POST['nome'];
     $email = $_POST['email'];
     $dataAtual = new DateTime('now', new DateTimeZone('America/Sao_Paulo'));
+
+    $conteudo = "Contato Via Site:\n\nData: " . $dataAtual->format('d/m/Y - H:i:s') . "\n\nNome: $nome\nE-mail: $email\nMensagem: $mensagem\n\n----------------------------------------------------------------------------";
+
+    $nomeArquivo = strtolower(str_replace(" ","_", $nome));
+
+    $dataArquivo = $dataAtual->format('d-m-Y_H-i-s');
+
+    $arquivoFinal = "../contatos/" . $nomeArquivo . "_" . $dataArquivo . ".txt";
+
+    file_put_contents($arquivoFinal, $conteudo);
+
 }
 
 ?>
