@@ -33,45 +33,40 @@
     
     <script>
         document.getElementById("formEmail").addEventListener("submit", function(e){
-
-            e.preventDefault(); 
+            
+            e.preventDefault();
 
             const email = document.getElementById("email").value;
 
             fetch("verificar-email.php", {
                 method: "POST",
-                headers:{
+                headers: {
                     "Content-Type": "application/x-www-form-urlencoded"
                 },
                 body: "email=" + encodeURIComponent(email)
             })
             .then(resposta => resposta.text())
-            .then(dados => {
-
+            .then(dados =>{
                 const campo = document.getElementById("email");
                 const mensagem = document.getElementById("mensagem");
 
                 if(dados === "existe"){
-
                     campo.classList.remove("border-success");
                     campo.classList.add("border-danger");
 
-                    mensagem.innerHTML =
+                    mensagem.innerHTML = 
                     '<div class="text-danger">E-mail já cadastrado</div>';
-                }
+                } 
                 else{
-
                     campo.classList.remove("border-danger");
                     campo.classList.add("border-success");
 
                     mensagem.innerHTML =
                     '<div class="text-success">E-mail cadastrado com sucesso</div>';
                 }
-
             });
 
         });
-
     </script>
 </body>
 </html>
