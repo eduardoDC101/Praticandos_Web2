@@ -93,7 +93,7 @@
 
     function carregarTarefas(){
 
-        fetch("listar-tarefas.php")
+        fetch("listar-tarefas.php") // quando não definimos method, ele é get por padrão. E get não precisa de body e headers.
         .then(res => res.text())
         .then(dados => {
             document.getElementById("listaTarefas").innerHTML = dados;
