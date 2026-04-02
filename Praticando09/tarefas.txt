@@ -1,1 +1,1 @@
-[{"descricao":"Lutar Judo","prioridade":"Media","data":"18\/03\/2026 20:05"},{"descricao":"Lutar Karate","prioridade":"Media","data":"18\/03\/2026 20:05"},{"descricao":"Treinar Muscula\u00e7\u00e3o","prioridade":"Alta","data":"18\/03\/2026 20:06"},{"descricao":"Ver s\u00e9rie","prioridade":"Baixa","data":"18\/03\/2026 20:06"}]
+[{"descricao":"Correr","prioridade":"Media","data":"27\/03\/2026 11:19"}]
